@@ -11,7 +11,7 @@ exports.initializeListeners = function() {
   let log = require('./utils/logger').create('dbSync'),
     db = require('./db'),
     ipc = ipcMain;
-
+ 
   ipc.on('dbSync-add', (event, args) => {
     let collName = args.collName,
       coll = db.getCollection(`UI_${collName}`);

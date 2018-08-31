@@ -1,9 +1,3 @@
-/**
-Window communication
-
-@module ipcCommunicator
-*/
-
 const _ = global._;
 const fs = require('fs');
 const { app, ipcMain: ipc, shell, webContents } = require('electron');
