@@ -230,7 +230,6 @@ ipc.on('backendAction_importWalletFile', (e, path, pw) => {
     nodeProcess.removeAllListeners('error');
     nodeProcess.kill('SIGINT');
   });
-
   // file password
   setTimeout(() => {
     if (!error) {

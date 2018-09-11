@@ -18,7 +18,7 @@ const logger = require('../modules/utils/logger');
 chai.should();
 
 process.env.TEST_MODE = 'true';
-
+ 
 const log = logger.create('base');
 
 const startGeth = function*() {
